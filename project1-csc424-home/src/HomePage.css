@@ -1,0 +1,60 @@
+.csc-container {
+  font-family: "Inter", sans-serif;
+  padding: 2rem;
+  text-align: center;
+  color: #222;
+  background: linear-gradient(135deg, #e3f2fd, #fff);
+  min-height: 100vh;
+}
+
+.csc-header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.csc-header p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.csc-card {
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 600px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+}
+
+.csc-card.hovered {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.csc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.csc-box {
+  background: #1976d2;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 14px;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.csc-box:hover {
+  transform: scale(1.05);
+}
+
+.csc-footer {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}

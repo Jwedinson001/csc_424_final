@@ -1,0 +1,34 @@
+# Dependency directories
+node_modules/
+.pnp/
+.pnp.js
+
+# Vite build output
+dist/
+
+# Local environment variables
+.env
+.env.*
+!.env.example
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Cache
+.cache/
+vite.config.ts.timestamp*
+*.tsbuildinfo
+
+# Docker artifacts
+*.pid
+*.tar
