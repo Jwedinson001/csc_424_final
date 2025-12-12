@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend-docker-info-api
+    container_name: backend
+    ports:
+      - "3001:3001"
+    networks:
+      - webnet
+
+  project1:
+    build: ./project1-csc424-home
+    container_name: project1
+    ports:
+      - "5173:5173"
+    networks:
+      - webnet
+
+  project2:
+    build: ./project2-docker-info
+    container_name: project2
+    ports:
+      - "5174:5174"
+    networks:
+      - webnet
+
+  nginx:
+    build: ./nginx
+    container_name: nginx
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+      - project1
+      - project2
+    networks:
+      - webnet
+
+networks:
+  webnet:
